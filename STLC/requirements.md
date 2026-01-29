@@ -41,17 +41,22 @@ Users should be able to rate products with a 5-star system and have the option t
 Alcoholic products require age verification. A modal should appear when navigating to the alcoholic products category asking if the user is 18+. Users must input their age before accessing the alcoholic products.
 
 **Questions:**
-1. When exactly does the age verification modal appear (on category click, page load, direct URL access)?
+1. When exactly does the age verification modal appear (on category click, page load)?
 2. How should the age verification modal be implemented? (e.g., date of birth input (text field or selecting from a Calendar pop-up), age input)
 3. If the age verification modal is date of birth input, what format should the date of birth be in? (e.g., MM/DD/YYYY)
 4. What happens if the user enters an age under 18 — are they blocked, redirected, or shown a warning?
 5. Is the age verification remembered for the session or future visits, and how long does it persist?
 6. What input validation exists for the age field (non-numeric values, negative numbers, extremely high values)?
 7. Does the age verification behave differently for logged-in vs. non-logged-in users?
-8. What happens if the user closes the modal without entering their age?
+8. What happens if the user closes or confirms the modal without entering their age?
 
 **Detailed Requirement:**
-
+Alcoholic products require age verification. A modal is displayed when the user navigates to Shop or Favorites page.
+The age verification modal is asking the user for the date of birth to be entered in a text field format. The user must enter the birthdate in the DD-MM-YYYY format. User then must press on the "Confirm" button to submit their birthdate.
+If the user enters an age under 18, a warning is shown and the user cannot see the Alcoholic products when visiting the Alcohol section.
+The age verification is not remembered if the user reopens the website or has future visits, but it persists as long as the session is still active.
+User can enter anything in the date of birth field or can close or confirm the modal without entering their date of birth, but if the format is not DD-MM-YYYY or nothing is entered in the field, then the user is treated like an underage user.
+The age verification behaved the same for logged-in vs. non-logged-in users.
 
 ### **3. Shipping Cost Changes**
 
