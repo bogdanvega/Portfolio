@@ -33,6 +33,13 @@ Users should be able to rate products with a 5-star system and have the option t
 7. What happens if the user submits a rating but the network request fails?
 
 **Detailed Requirement:**
+Users should be able to rate products with a 5-star system and have the option to add written feedback.
+If the user isn't logged in, or the user didn't yet buy the product, then a message that he needs to buy the product in order to leave a feedback is displayed.
+The user can review a product only one time, then a message is displayed that he already reviewed the product. If he wants though, the user can edit the said review how many times he wants, being able to change the rating and the written feedback.
+The written feedback field accepts any type of characters, there are no forbidden words and the length of the feedback accepted is maximum 500 characters.
+The average rating is calculated by summing all individual ratings and dividing by the total number of reviews and the average is updated immediately after the review is added.
+The review is visible instantly to other users, no other moderation is needed.
+If the user submits a rating but the network request fails, an error message is displayed.
 
 
 ### **2. Age Verification for Alcoholic Products**
@@ -52,11 +59,12 @@ Alcoholic products require age verification. A modal should appear when navigati
 
 **Detailed Requirement:**
 Alcoholic products require age verification. A modal is displayed when the user navigates to Shop or Favorites page.
-The age verification modal is asking the user for the date of birth to be entered in a text field format. The user must enter the birthdate in the DD-MM-YYYY format. User then must press on the "Confirm" button to submit their birthdate.
+The age verification modal is asking the user for the date of birth to be entered in a text field. The user must enter the birthdate in the DD-MM-YYYY format. User then must press on the "Confirm" button to submit their birthdate.
 If the user enters an age under 18, a warning is shown and the user cannot see the Alcoholic products when visiting the Alcohol section.
 The age verification is not remembered if the user reopens the website or has future visits, but it persists as long as the session is still active.
 User can enter anything in the date of birth field or can close or confirm the modal without entering their date of birth, but if the format is not DD-MM-YYYY or nothing is entered in the field, then the user is treated like an underage user.
 The age verification behaved the same for logged-in vs. non-logged-in users.
+
 
 ### **3. Shipping Cost Changes**
 
@@ -73,3 +81,7 @@ Free shipping for orders above a certain amount. Orders below this amount will i
 7. Is the shipping fee applied consistently on the checkout page, order summary, and confirmation screen?
 
 **Detailed Requirement:**
+Free shipping for orders equal or above 20€ amount of products total value. Orders below this amount will incur a shipping fee of 5€.
+The shipping cost is calculated dynamically when items are added or removed from the basket and is clearly displayed and updated in real time in the basket and before payment.
+If the user qualifies for free shipping and then removed items and drops below the amount that qualifies him for free shipping, the shipment fee is updated and added back in the total price.
+The shipping costs should be handled equally across different payment methods. 
