@@ -1,10 +1,6 @@
-## The assignment
-
-****Write down which critical questions you can ask as a tester. Think of at least 3 questions per new feature. In the next session we will discuss these questions; after this you will receive the details of the requirements. 
-
 ## **The software**
 
-You will test a webshop, which can be found here: https://grocerymate.masterschool.com/
+A webshop, which can be found here: https://grocerymate.masterschool.com/
 
 The webshop has the following basic functionalities:
 
@@ -13,8 +9,6 @@ The webshop has the following basic functionalities:
 - Add products to favorites
 - Add products to basket
 - Check-out process: billing and sending information in a form, choose payment method. Calculation of costs (calculate total price)
-
-**You are going to test the new developed features. The new features are written below.**
 
 ## New features
 
