@@ -1,6 +1,6 @@
 ### **1. Product Rating System**
 
-**Test Design Techniques: Use Case Testing, Error Guessing**
+**Test Design Techniques: Decision Table Testing, Use Case Testing, Error Guessing**
 
 ### **Test Cases:**
 1. **Decision Table Testing:**
@@ -162,3 +162,57 @@
 | 14    | Click 'Send'                                     | Error message is displayed: "Invalid input for the field 'Rating'. Please check your input."  |  |                                                                          |               |
 
 
+### **2. Age Verification for Alcoholic Products**
+
+**Test Design Techniques: Use Case Testing, Boundary Value Analysis, Equivalence Partitioning, Error Guessing**
+
+### **Test Cases:**
+1. **Use Case Testing:**
+    - **Test Case**: Verify that the modal is displayed when user is accessing Shop.
+        As a user of MarketMate, I am prompted to enter my age when I'm navigating to Shop.
+
+| Step# | Action                                      | Expected outcome                                            | OK/NOK | URL                                                                      | Link to issue |
+|-|---------------------------------------------|-------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
+| 1 | Go to home page MarketMate                  | Home page is loaded                                         |  | [https://findmate.masterschool.com/](https://findmate.masterschool.com/) |               |
+| 2 | Click on profile page                       | Login page is loaded                                        |  | /auth                                                                    |               |
+| 3a | Fill in 'test123@test.com' as email address |                                                             |  |                                                                          |               |
+| 3b | Fill '123456' as password                   |                                                             |  |                                                                          |               |
+| 4 | Click 'Sign In'                             | You are successfully logged in and Home page is loaded      |  |                                                                          |               |
+| 5 | Click 'Shop'                                | Shop page is loaded and Age Verification modal is displayed |  |                                                                          |               |
+
+2. **Boundary Value Analysis:**
+    - **Test Case**: Verify that user with exactly 18 years old can view and buy alcoholic products.
+        As a user of MarketMate, I am able to view and buy alcoholic products if I am exactly 18 years old.
+
+| Step# | Action                                    | Expected outcome                                                                             | OK/NOK | URL                                                                      | Link to issue |
+|-------|-------------------------------------------|----------------------------------------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
+| 1     | Go to home page MarketMate                | Home page is loaded                                                                          |  | [https://findmate.masterschool.com/](https://findmate.masterschool.com/) |               |
+| 2     | Click 'Shop'                              | Shop page is loaded and Age Verification modal is displayed                                  |  |                                                                          |               |
+| 3     | Fill Date of birth as (Today - 18 years)  |                                                                                              |  |                                                                          |               |
+| 4     | Click 'Confirm'                           | Message "You are of age. You can now view all products, even alcohol products." is displayed |  |                                                                          |               |
+| 5     | Click 'Alcohol' Category on the left side | Alcoholic products are displayed                                                             |  |                                                                          |               |
+
+
+3. **Equivalence Partitioning:**
+    - **Test Case**: Verify that user below 18 years old can not view and buy alcoholic products.
+        As a user of MarketMate, I am not able to view and buy alcoholic products if I am below 18 years old.
+
+| Step# | Action                                    | Expected outcome                                                                                                           | OK/NOK | URL                                                                      | Link to issue |
+|-------|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
+| 1     | Go to home page MarketMate                | Home page is loaded                                                                                                        |  | [https://findmate.masterschool.com/](https://findmate.masterschool.com/) |               |
+| 2     | Click 'Shop'                              | Shop page is loaded and Age Verification modal is displayed                                                                |  |                                                                          |               |
+| 3     | Fill Date of birth as (Today - 17 years ) |                                                                                                                            |  |                                                                          |               |
+| 4     | Click 'Confirm'                           | Message "You are underage. You can still browse the site, but you will not be able to view alcohol products." is displayed |  |                                                                          |               |
+| 5     | Click 'Alcohol' Category on the left side | Alcoholic products are not displayed                                                                                       |  |                                                                          |               |
+
+4. **Error Guessing:**
+    - **Test Case**: Verify that an invalid Date of Birth format is not accepted by the modal.
+        As a user of MarketMate, I get an error if I submit an invalid Date of Birth format.
+
+| Step# | Action                                    | Expected outcome                                                                                                           | OK/NOK | URL                                                                      | Link to issue |
+|-------|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
+| 1     | Go to home page MarketMate                | Home page is loaded                                                                                                        |  | [https://findmate.masterschool.com/](https://findmate.masterschool.com/) |               |
+| 2     | Click 'Shop'                              | Shop page is loaded and Age Verification modal is displayed                                                                |  |                                                                          |               |
+| 3     | Fill Date of birth as (Today - 17 years ) |                                                                                                                            |  |                                                                          |               |
+| 4     | Click 'Confirm'                           | Message "You are underage. You can still browse the site, but you will not be able to view alcohol products." is displayed |  |                                                                          |               |
+| 5     | Click 'Alcohol' Category on the left side | Alcoholic products are not displayed                                                                                       |  |                                                                          |               |
