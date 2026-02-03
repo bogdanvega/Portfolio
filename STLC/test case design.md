@@ -64,7 +64,7 @@
         As a logged-in user of MarketMate, I should not be able to rate a product more than one time.
 
     Could have used a dependency on Test Case #1 for this test case.
-    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation, but it will make the test case steps longer.
+    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation. But it will make the test case steps longer.
 
 | Step# | Action                                                | Expected outcome                                                | OK/NOK | URL                                                                      | Link to issue |
 |-------|-------------------------------------------------------|-----------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
@@ -96,7 +96,7 @@
         As a user of MarketMate, I should be able to see a product rating from another user.
 
   Could have used a dependency on Test Case #1 for this test case.
-    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation, but it will make the test case steps longer.
+    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation. But it will make the test case steps longer.
 
 | Step# | Action                                              | Expected outcome                                       | OK/NOK | URL                                                                      | Link to issue |
 |-------|-----------------------------------------------------|--------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
@@ -128,5 +128,37 @@
 | 18    | Click 'Shop'                                        | Shop page is loaded                                    |  |                                                                          |               |
 | 19    | Click 'Asparagus' to open product information       | Asparagus product information page is loaded           |  |                                                                          |               |
 | 20    | Scroll down and look for test123 user rating        | The 3 stars rating from user test123 is displayed      |  |                                                                          |               |
+
+
+6. **Error Guessing:**
+    - **Test Case**: Verify system behavior when trying to rate a product without selecting a star.
+        As a user of MarketMate, I should not be able to rate a product without selecting a star.
+
+  Could have used a dependency on Test Case #1 for this test case.
+    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation. But it will make the test case steps longer.
+
+| Step# | Action                                           | Expected outcome                                                                              | OK/NOK | URL                                                                      | Link to issue |
+|-------|--------------------------------------------------|-----------------------------------------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
+| 1     | Go to home page MarketMate                       | Home page is loaded                                                                           |  | [https://findmate.masterschool.com/](https://findmate.masterschool.com/) |               |
+| 2     | Click on profile page                            | Login page is loaded                                                                          |  | /auth                                                                    |               |
+| 3a    | Fill in 'test123@test.com' as email address      |                                                                                               |  |                                                                          |               |
+| 3b    | Fill '123456' as password                        |                                                                                               |  |                                                                          |               |
+| 4     | Click 'Sign In'                                  | You are successfully logged in and Home page is loaded                                        |  |                                                                          |               |
+| 5     | Click 'Shop'                                     | Shop page is loaded                                                                           |  |                                                                          |               |
+| 6     | Click 'Add to Cart' under the 'Ginger' vegetable | 'Item added to cart' message is displayed                                                     |  |                                                                          |               |
+| 7     | Go to cart page by clicking on Cart icon         | Checkout page is displayed                                                                    |  |                                                                          |               |
+| 8a    | Fill 'Baker street, 57' as Street Address        |                                                                                               |  |                                                                          |               |
+| 8b    | Fill 'New York' as City                          |                                                                                               |  |                                                                          |               |
+| 8c    | Fill '89210' as Postal Code                      |                                                                                               |  |                                                                          |               |
+| 8d    | Fill '1111111111111111' as Card number           |                                                                                               |  |                                                                          |               |
+| 8e    | Fill 'Test Test' as Name on card                 |                                                                                               |  |                                                                          |               |
+| 8f    | Fill '02/2028' as Expiration                     |                                                                                               |  |                                                                          |               |
+| 8g    | Fill '111' as Cvv                                |                                                                                               |  |                                                                          |               |
+| 9     | Click 'Buy now'                                  | Successfully bought the item. Home page is loaded.                                            |  |                                                                          |               |
+| 10    | Click 'Shop'                                     | Shop page is loaded                                                                           |  |                                                                          |               |
+| 11    | Click 'Ginger' to open product information       | Ginger product information page is loaded                                                     |  |                                                                          |               |
+| 12    | Leave the star rating without selecting any star |                                                                                               |  |                                                                          |               |
+| 13    | Fill 'Too green' in 'What is your view?' field   |                                                                                               |  |                                                                          |               |
+| 14    | Click 'Send'                                     | Error message is displayed: "Invalid input for the field 'Rating'. Please check your input."  |  |                                                                          |               |
 
 
