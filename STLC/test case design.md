@@ -268,8 +268,8 @@
 
 
 5. **Error Guessing:**
-    - **Test Case**: Verify that not filling the Date of Birth is not accepted by the modal.
-        As a user of MarketMate, I get an error if I confirm the age verification modal without filling the Date of Birth .
+    - **Test Case**: Verify that not filling the Birth Date is not accepted by the modal.
+        As a user of MarketMate, I get an error if I confirm the age verification modal without filling Birth Date.
 
 | Step# | Action                                            | Expected outcome                                                                                                           | OK/NOK | URL                                                                      | Link to issue |
 |-------|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--|--------------------------------------------------------------------------|---------------|
