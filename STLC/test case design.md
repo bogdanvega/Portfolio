@@ -32,6 +32,7 @@
 | 14    | Select a rating of 4 stars                       | 4 stars are filled in                                                                                                                                |  |                                                                          |               |
 | 15    | Fill 'Fresh' in 'What is your view?' field       |                                                                                                                                                      |  |                                                                          |               |
 | 16    | Click 'Send'                                     | Rating with 4 star and "Fresh" message is displayed under the product information<br/>"You have already reviewed this product." message is displayed |  |                                                                          |               |
+
 <img width="1918" height="825" alt="Screenshot 2026-02-04 122919" src="https://github.com/user-attachments/assets/96d97091-8fbb-488d-8f5a-0176d2fa5d90" />
 <img width="1889" height="821" alt="Screenshot 2026-02-04 123033" src="https://github.com/user-attachments/assets/20299f48-6a22-403f-bc6f-d8459e06a5fa" />
 <img width="1893" height="822" alt="Screenshot 2026-02-04 123119" src="https://github.com/user-attachments/assets/ce2204f4-35ee-4248-966c-07cf58e54e56" />
