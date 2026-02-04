@@ -56,6 +56,10 @@
 | 8     | Click 'Gala Apples' to open product information | Gala Apples product information page is loaded                                                |  |                          |               |
 | 9     | Try to rate the product                         | "You need to buy this product to tell us your opinion!" message is displayed                  |  |                          |               |
 
+
+<img width="1894" height="815" alt="Screenshot 2026-02-04 124750" src="https://github.com/user-attachments/assets/606b075d-d81b-4bf4-9b99-64bbe7b48fe7" />
+
+
 3. **Decision Table Testing:**
     - **Test Case**: Verify that a user cannot rate a product being logged out.
         As a logged-out user of MarketMate, I should not be able to rate a product.
@@ -70,6 +74,9 @@
 | 7     | Click 'Confirm'                          | Message "You are of age. You can now view all products, even alcohol products." is displayed                                                                             |  |                          |               |
 | 8     | Click 'Kale' to open product information | Kale product information page is loaded                                      |  |                          |               |
 | 9     | Try to rate the product                  | "You need to buy this product to tell us your opinion!" message is displayed |  |                          |               |
+
+<img width="1883" height="801" alt="Screenshot 2026-02-04 125152" src="https://github.com/user-attachments/assets/0d8cd5d3-da67-49ee-b476-10c03bac0a64" />
+
 
 4. **Use Case Testing:**
     - **Test Case**: Verify that a logged-in user cannot rate a product multiple times.
@@ -104,6 +111,9 @@
 | 15    | Fill 'Tasty' in 'What is your view?' field            |                                                                 |  |                                                                          |               |
 | 16    | Click 'Send'                                          | Rating is displayed under the product information               |  |                                                                          |               |
 | 17    | Try to rate the product again                         | "You have already reviewed this product." message is displayed  |  |                                                                          |               |
+
+<img width="1889" height="818" alt="Screenshot 2026-02-04 125414" src="https://github.com/user-attachments/assets/02329f39-9f00-46e4-b724-8d96a04d439f" />
+
 
 5. **Use Case Testing:**
     - **Test Case**: Verify that a user can see the product rating from another user.
@@ -145,6 +155,10 @@
 | 21    | Click 'Asparagus' to open product information       | Asparagus product information page is loaded                                                  |  |                                                                          |               |
 | 22    | Scroll down and look for test123 user rating        | The 3 stars rating from user test123 is displayed                                             |  |                                                                          |               |
 
+<img width="1887" height="817" alt="Screenshot 2026-02-04 125649" src="https://github.com/user-attachments/assets/f8803010-0ecc-4671-9834-c920b4b2e91a" />
+<img width="1881" height="813" alt="Screenshot 2026-02-04 125713" src="https://github.com/user-attachments/assets/809a78a8-69d3-42c9-a08a-108ea2a61da5" />
+
+
 
 6. **Error Guessing:**
     - **Test Case**: Verify system behavior when trying to rate a product without selecting a star.
@@ -178,6 +192,9 @@
 | 14    | Leave the star rating without selecting any star |                                                                                               |  |                                                                          |               |
 | 15    | Fill 'Too green' in 'What is your view?' field   |                                                                                               |  |                                                                          |               |
 | 16    | Click 'Send'                                     | Error message is displayed: "Invalid input for the field 'Rating'. Please check your input."  |  |                                                                          |               |
+
+
+<img width="1884" height="816" alt="Screenshot 2026-02-04 125950" src="https://github.com/user-attachments/assets/1f905788-dc43-4749-a4e1-e58fedb4a347" />
 
 
 ### **2. Age Verification for Alcoholic Products**
