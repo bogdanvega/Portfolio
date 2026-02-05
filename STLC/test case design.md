@@ -1,3 +1,8 @@
+### **Which test cases I would automate?**
+
+**I would probably automate all test cases that I designed here and much more. 
+The main reason would be the increased speed of execution. Other than that, I think that efficiency is another factor along with reducing human error. Automation will allow the testers to focus on complex, exploratory testing, not on repeatable tests.**
+
 ### **1. Product Rating System**
 
 **Test Design Techniques: Decision Table Testing, Use Case Testing, Error Guessing**
