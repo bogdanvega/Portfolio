@@ -1,7 +1,5 @@
 ### **1. Product Rating System**
 
-**Test Design Techniques: Decision Table Testing, Use Case Testing, Error Guessing**
-
 ### Scenario 1: Logged-in user rates a product that he previously bought.
 
 As a logged-in user of MarketMate, I am able to rate a product after I buy it.
@@ -37,9 +35,9 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1893" height="822" alt="Screenshot 2026-02-04 123119" src="https://github.com/user-attachments/assets/ce2204f4-35ee-4248-966c-07cf58e54e56" />
 
 
-2. **Decision Table Testing:**
-    - **Test Case**: Verify that a logged-in user cannot rate a product if the product was not bought.
-        + As a logged-in user of MarketMate, I should not be able to rate a product if I didn't buy it.
+### Scenario 2: Logged-in user tried to rate a product he didn't bought.
+
+As a logged-in user of MarketMate, I should not be able to rate a product if I didn't buy it.
 
 | Step# | Action                                          | Expected outcome                                                                              | STATUS | URL                      | Link to issue |
 |-------|-------------------------------------------------|-----------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -58,9 +56,9 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1894" height="815" alt="Screenshot 2026-02-04 124750" src="https://github.com/user-attachments/assets/606b075d-d81b-4bf4-9b99-64bbe7b48fe7" />
 
 
-3. **Decision Table Testing:**
-    - **Test Case**: Verify that a user cannot rate a product being logged out.
-        + As a logged-out user of MarketMate, I should not be able to rate a product.
+### Scenario 3: Logged out user cannot rate a product.
+
+As a logged-out user of MarketMate, I should not be able to rate a product.
 
 | Step# | Action                                   | Expected outcome                                                                                           | OK/NOK | URL                      | Link to issue |
 |-------|------------------------------------------|------------------------------------------------------------------------------------------------------------|--------|--------------------------|---------------|
@@ -76,12 +74,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1883" height="801" alt="Screenshot 2026-02-04 125152" src="https://github.com/user-attachments/assets/0d8cd5d3-da67-49ee-b476-10c03bac0a64" />
 
 
-4. **Use Case Testing:**
-    - **Test Case**: Verify that a logged-in user cannot rate a product multiple times.
-        + As a logged-in user of MarketMate, I should not be able to rate a product more than one time.
-
-    Could have used a dependency on Test Case #1 for this test case.
-    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation. But it will make the test case steps longer.
+### Scenario 4: Logged-in user tries to rate a product multiple times.
+As a logged-in user of MarketMate, I should not be able to rate a product more than one time.
 
 | Step# | Action                                                | Expected outcome                                                                             | STATUS  | URL                                                                      | Link to issue |
 |-------|-------------------------------------------------------|----------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------|---------------|
@@ -113,12 +107,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1889" height="818" alt="Screenshot 2026-02-04 125414" src="https://github.com/user-attachments/assets/02329f39-9f00-46e4-b724-8d96a04d439f" />
 
 
-5. **Use Case Testing:**
-    - **Test Case**: Verify that a user can see the product rating from another user.
-        + As a user of MarketMate, I should be able to see a product rating from another user.
-
-  Could have used a dependency on Test Case #1 for this test case.
-    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation. But it will make the test case steps longer.
+### Scenario 5: User can see the product ratings from another user.
+As a user of MarketMate, I should be able to see a product rating from another user.
 
 | Step# | Action                                              | Expected outcome                                                                              | STATUS  | URL                                                                      | Link to issue |
 |-------|-----------------------------------------------------|-----------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------|---------------|
@@ -158,12 +148,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 
 
 
-6. **Error Guessing:**
-    - **Test Case**: Verify system behavior when trying to rate a product without selecting a star.
-        + As a user of MarketMate, I should not be able to rate a product without selecting a star.
-
-  Could have used a dependency on Test Case #1 for this test case.
-    To avoid dependencies, because they can cause problems in test execution, I'll avoid them in this situation. But it will make the test case steps longer.
+### Scenario 6: User tries to rate a product without selecting a star.
+As a user of MarketMate, I should not be able to rate a product without selecting a star.
 
 | Step# | Action                                           | Expected outcome                                                                                    | STATUS  | URL                                                                      | Link to issue |
 |-------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------|---------|--------------------------------------------------------------------------|---------------|
@@ -197,12 +183,9 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 
 ### **2. Age Verification for Alcoholic Products**
 
-**Test Design Techniques: Use Case Testing, Boundary Value Analysis, Equivalence Partitioning, Error Guessing**
 
-### **Test Cases:**
-1. **Use Case Testing:**
-    - **Test Case**: Verify that the modal is displayed when user is accessing Shop.
-        + As a user of MarketMate, I am prompted to enter my age when I'm navigating to Shop.
+### Scenario 1: Modal is displayed when user is accessing Shop.
+As a user of MarketMate, I am prompted to enter my age when I'm navigating to Shop.
 
 | Step# | Action                                      | Expected outcome                                            | STATUS | URL                                                                      | Link to issue |
 |-|---------------------------------------------|-------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -215,9 +198,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 
 <img width="1884" height="816" alt="Screenshot 2026-02-04 130528" src="https://github.com/user-attachments/assets/e4c4eafc-da94-4188-9b3d-f013fb7b0d1e" />
 
-2. **Boundary Value Analysis:**
-    - **Test Case**: Verify that user with exactly 18 years old can view and buy alcoholic products.
-        As a user of MarketMate, I am able to view and buy alcoholic products if I am exactly 18 years old.
+### Scenario 2: User with exactly 18 years old can view and buy alcoholic products.
+As a user of MarketMate, I am able to view and buy alcoholic products if I am exactly 18 years old.
 
 | Step# | Action                                    | Expected outcome                                                                             | STATUS | URL                                                                      | Link to issue |
 |-------|-------------------------------------------|----------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -232,9 +214,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1888" height="814" alt="Screenshot 2026-02-04 131543" src="https://github.com/user-attachments/assets/ac7e3a8a-7bcb-4898-a158-fbf58e335ed9" />
 
 
-3. **Equivalence Partitioning:**
-    - **Test Case**: Verify that user below 18 years old can not view and buy alcoholic products.
-        As a user of MarketMate, I am not able to view and buy alcoholic products if I am below 18 years old.
+### Scenario 3: User below 18 years old can not view and buy alcoholic products.
+As a user of MarketMate, I am not able to view and buy alcoholic products if I am below 18 years old.
 
 | Step# | Action                                    | Expected outcome                                                                                                           | STATUS | URL                                                                      | Link to issue |
 |-------|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -249,9 +230,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1892" height="811" alt="Screenshot 2026-02-04 131443" src="https://github.com/user-attachments/assets/8795ca98-aa12-428b-bd1c-2d17eb486d98" />
 
 
-4. **Error Guessing:**
-    - **Test Case**: Verify that an invalid Date of Birth format is not accepted by the modal.
-        + As a user of MarketMate, I get an error if I submit an invalid Date of Birth format.
+### Scenario 4: Invalid Date of Birth format is not accepted by the modal.
+As a user of MarketMate, I get an error if I submit an invalid Date of Birth format.
 
 | Step# | Action                                    | Expected outcome                                            | STATUS | URL                                                                      | Link to issue |
 |-------|-------------------------------------------|-------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -265,9 +245,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1892" height="811" alt="Screenshot 2026-02-04 131443" src="https://github.com/user-attachments/assets/010c1ffe-dfaa-4e13-8242-1888ed527c67" />
 
 
-5. **Error Guessing:**
-    - **Test Case**: Verify that not filling the Birth Date is not accepted by the modal.
-        As a user of MarketMate, I get an error if I confirm the age verification modal without filling Birth Date.
+### Scenario 5: Not filling the Birth Date is not accepted by the modal.
+As a user of MarketMate, I get an error if I confirm the age verification modal without filling Birth Date.
 
 | Step# | Action                                            | Expected outcome                                            | STATUS | URL                                                                            | Link to issue |
 |-------|---------------------------------------------------|-------------------------------------------------------------|--------|--------------------------------------------------------------------------------|---------------|
@@ -282,12 +261,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 
 ### **3. Shipping Cost Changes**
 
-**Test Design Techniques: Use Case Testing, Boundary Value Analysis, Equivalence Partitioning, Error Guessing**
-
-### **Test Cases:**
-1. **Equivalence Partitioning:**
-    - **Test Case**: Verify that free shipping is granted when order is above 20€.
-        + As a user of MarketMate, I get free shipping when my order is above 20€.
+### Scenario 1: Free shipping is granted when order is above 20€.
+As a user of MarketMate, I get free shipping when my order is above 20€.
 
 | Step# | Action                                                                             | Expected outcome                                                                             | STATUS | URL                                                                      | Link to issue |
 |-------|------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -307,9 +282,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1890" height="817" alt="Screenshot 2026-02-04 131904" src="https://github.com/user-attachments/assets/27987da0-8704-426e-9f9a-fc81ca85bcc8" />
 
 
-2. **Boundary Value Analysis:**
-    - **Test Case**: Verify that 5€ shipping cost is added to orders just below 20€.
-        + As a user of MarketMate, I have to pay 5€ shipping cost when my order is just below 20€.
+### Scenario 2: 5€ shipping cost is added to orders just below 20€.
+As a user of MarketMate, I have to pay 5€ shipping cost when my order is just below 20€.
 
 | Step# | Action                                                                                    | Expected outcome                                                                             | STATUS | URL                                                                      | Link to issue |
 |-------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -331,9 +305,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1890" height="806" alt="Screenshot 2026-02-04 132047" src="https://github.com/user-attachments/assets/2e76356e-e469-41a6-8f7f-bbd16ce1acbd" />
 
 
-3. **Use Case Testing:**
-    - **Test Case**: Verify that shipping cost is calculated dynamically when items are added to the basket.
-        As a user of MarketMate, I can see the shipping cost is calculated dynamically when items are added to the basket.
+### Scenario 3: Shipping cost is calculated dynamically when items are added to the basket.
+As a user of MarketMate, I can see the shipping cost is calculated dynamically when items are added to the basket.
 
 | Step# | Action                                                                                         | Expected outcome                                                                             | STATUS | URL                                                                      | Link to issue |
 |-------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------|---------------|
@@ -356,9 +329,8 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1893" height="805" alt="Screenshot 2026-02-04 132827" src="https://github.com/user-attachments/assets/16c74589-c2c6-49e2-b3a8-5c8720655093" />
 
 
-4. **Error Guessing:**
-    - **Test Case**: Verify that free shipping cost is not kept after the Product Total drops below 20€.
-        + As a user of MarketMate, I can see the shipping cost is being added back when Product Total drops below 20€.
+### Scenario 4: Free shipping cost is not kept after the Product Total drops below 20€.
+As a user of MarketMate, I can see the shipping cost is being added back when Product Total drops below 20€.
 
 | Step# | Action                                                                                         | Expected outcome                                                                             | STATUS | URL                                                                      | Link to issue                                          |
 |-------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------|--------------------------------------------------------------------------|--------------------------------------------------------|
@@ -380,4 +352,3 @@ As a logged-in user of MarketMate, I am able to rate a product after I buy it.
 <img width="1891" height="808" alt="Screenshot 2026-02-04 133114" src="https://github.com/user-attachments/assets/c04c5e31-a9f5-4bdb-bbdf-dac5860c9264" />
 <img width="1885" height="807" alt="Screenshot 2026-02-04 133129" src="https://github.com/user-attachments/assets/91926864-4463-4b31-9025-370a3fa5aa14" />
 <img width="1888" height="807" alt="Screenshot 2026-02-04 133158" src="https://github.com/user-attachments/assets/2a07af72-fcf7-4c68-a6ce-0f30101400e6" />
-
