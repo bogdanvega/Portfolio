@@ -11,6 +11,10 @@ from Portfolio.TestAutomation.main import count_word_matches
 ])
 
 def test_count_word_matches_negative(a, b, expected):
-    assert count_word_matches(a, b) == expected
+    if not isinstance(a, str) or not isinstance(b, str):
+        with pytest.raises(TypeError):
+            count_word_matches(a, b)
+    else:
+        assert count_word_matches(a, b) == expected
 
 pytest.main()
