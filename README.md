@@ -10,3 +10,4 @@
 ## 7. Executed the test cases and reported the issues found while executing them
 ## 8. Created a new repository for Pytest homework: https://github.com/bogdanvega/Pytest-Testing-word-matching.git
 ## 9. Created a new repository for Selenium Basics & PyTest homework: https://github.com/bogdanvega/Selenium-Basics-PyTest-Homework.git
+## 10. Created xpath_task_1.md and xpath_task_2.md inside Test Automation folder for the XPath Homework
