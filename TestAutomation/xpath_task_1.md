@@ -3,7 +3,7 @@
 In this task you are required to write XPaths based on the given HTML document. Carefully go through the HTML document. You can also copy/paste the HTML locally to view the webpage.
 
 Here is the given HTML:
-
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,6 +85,7 @@ Here is the given HTML:
     </footer>
 </body>
 </html>
+```
 
 1. Write the XPath to locate the main **h1** element.
 - //h1
