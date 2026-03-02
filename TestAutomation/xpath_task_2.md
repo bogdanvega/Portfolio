@@ -39,7 +39,7 @@ Solution:
    a. Quantity input of Oranges
 
     Solution:
-    //input[@name = 'quantity_66b3a57b3fd5048eacb4798f']
+    //div[@class = 'product-card']//input[@type = 'number'][1]
 
    b. Add to cart button for Oranges
 
