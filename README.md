@@ -11,3 +11,4 @@
 ## 8. Created a new repository for Pytest homework: https://github.com/bogdanvega/Pytest-Testing-word-matching.git
 ## 9. Created a new repository for Selenium Basics & PyTest homework: https://github.com/bogdanvega/Selenium-Basics-PyTest-Homework.git
 ## 10. Created xpath_task_1.md and xpath_task_2.md inside Test Automation folder for the XPath Homework
+## 11. Created a Selenium Test Automation project using Python, Selenium WebDriver and PyTest. The project automates user workflows such as login, purchasing products and leaving product ratings. Repository: https://github.com/bogdanvega/selenium_pytest_project.git
